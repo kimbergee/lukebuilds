@@ -18,16 +18,73 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background: rgb(38, 38, 38);
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+.name {
+  margin: 0 auto 1rem auto;
+}
+
+.logo-honeycomb {
+  margin: 2rem auto;
+}
+
+.logo-blocks {
+  margin-bottom: 2rem;
+}
+
+.logo-text {
+  margin-right: 2rem;
+}
+
+.soon-box {
+  margin: 4rem auto 8rem auto;
+}
+
+.yellow-tag {
+  background-color: #facc15;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  line-height: 1.35;
+  display: inline-block;
+  border-radius: 0.125rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+}
+
+.name-tag {
+  /* background-color: #facc15; */
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  line-height: 1.35;
+  display: inline-block;
+  border-radius: 0.125rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .soon-box {
+    margin: 6rem auto 8rem auto;
+  }
+
+  .yellow-tag {
+    font-size: 6rem;
   }
 }
